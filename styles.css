@@ -1,10 +1,11 @@
 #grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(5, 100px);
+  grid-template-columns: repeat(4, 242.5px);
+  grid-template-rows: repeat(5, 124px);
   gap: 10px;
   background-color: white;
 }
+
 
 #grid div {
   background-color: green;
@@ -17,21 +18,21 @@
 
 /* Layout structure */
 #grid div:nth-child(1) {
-  grid-column: 1 / 4; /* spans all 3 columns */
+  grid-column: 4/auto; /* spans all 3 columns */
 }
 
 #grid div:nth-child(2) {
-  grid-row: 2 / 4; /* spans vertically 2 rows */
+  grid-row: 4/auto; /* spans vertically 2 rows */
 }
 
-#grid div:nth-child(3) {
+/* #grid div:nth-child(3) {
   grid-column: 2 / 3;
   grid-row: 2 / 3;
-}
+} */
 
 #grid div:nth-child(4) {
-  grid-column: 3 / 4;
-  grid-row: 2 / 3;
+  grid-column: 2 / auto;
+  /* grid-row: 2 / 3; */
 }
 
 #grid div:nth-child(5) {
@@ -40,11 +41,11 @@
 }
 
 #grid div:nth-child(6) {
-  grid-column: 3 / 4;
-  grid-row: 3 / 4;
+  grid-column: 2 / auto;
+  /* grid-row: 3 / 4; */
 }
 
-#grid div:nth-child(7) {
+/* #grid div:nth-child(7) {
   grid-column: 1 / 2;
   grid-row: 4 / 5;
 }
@@ -57,9 +58,9 @@
 #grid div:nth-child(9) {
   grid-column: 3 / 4;
   grid-row: 4 / 5;
-}
+} */
 
 #grid div:nth-child(10) {
-  grid-column: 1 / 4;
-  grid-row: 5 / 6;
+  grid-column: 1 / auto;
+  /* grid-row: 5 / 6; */
 }
