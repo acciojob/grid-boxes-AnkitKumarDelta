@@ -10,12 +10,13 @@
   background-color: green;
   color: white;
   font-size: 24px;
+  padding: 10px; /* add spacing from the edges */
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start; /* align horizontally to the left */
+  align-items: flex-start; /* align vertically to the top */
 }
 
-/* Fix expected layout */
+/* Expected layout according to Cypress */
 #grid div:nth-child(1) {
   grid-column: span 4 / auto;
 }
