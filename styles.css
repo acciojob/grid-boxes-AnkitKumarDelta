@@ -1,5 +1,6 @@
 #grid {
   display: grid;
+  grid-auto-flow: row;
   grid-template-columns: repeat(4, 242.5px);
   grid-template-rows: repeat(5, 124px);
   gap: 10px;
@@ -16,7 +17,8 @@
   align-items: flex-start; 
 }
 
-/* Expected layout according to Cypress */
+ /* Expected layout according to Cypress */
+
 #grid div:nth-child(1) {
   grid-column: span 4 / auto;
 }
@@ -35,4 +37,4 @@
 
 #grid div:nth-child(10) {
   grid-column: span 3 / auto;
-}
+} 
