@@ -10,10 +10,10 @@
   background-color: green;
   color: white;
   font-size: 24px;
-  padding: 10px; /* add spacing from the edges */
+  padding: 10px;
   display: flex;
-  justify-content: flex-start; /* align horizontally to the left */
-  align-items: flex-start; /* align vertically to the top */
+  justify-content: flex-start;
+  align-items: flex-start; 
 }
 
 /* Expected layout according to Cypress */
